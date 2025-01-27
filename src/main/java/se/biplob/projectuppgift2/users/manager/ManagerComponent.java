@@ -1,6 +1,5 @@
-package se.biplob.projectuppgift2;
+package se.biplob.projectuppgift2.users.manager;
 
-import org.apache.catalina.Manager;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;

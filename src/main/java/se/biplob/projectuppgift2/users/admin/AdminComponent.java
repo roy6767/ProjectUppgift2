@@ -1,4 +1,4 @@
-package se.biplob.projectuppgift2;
+package se.biplob.projectuppgift2.users.admin;
 
 import org.springframework.stereotype.Component;
 

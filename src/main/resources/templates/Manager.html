@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manger Documents</title>
+</head>
+<body>
+<ul>
+    <li th:each="document : ${documents}">
+        <span th:text="${document.title}">Titel</span> av <span th:text="${document.description}">Description</span>
+    </li>
+</ul>
+</body>
+</html>

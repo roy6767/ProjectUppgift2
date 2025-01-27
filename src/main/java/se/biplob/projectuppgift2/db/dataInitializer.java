@@ -17,7 +17,7 @@ public class dataInitializer {
 
     @PostConstruct
     public void init() {
-        if(repository.findByUsername("user") == null) {
+        if(repository.findByUsername("guest") == null) {
             ApplicationUser user = new ApplicationUser();
             user.setUsername("guest");
             user.setPassword(encoder.encode("password"));

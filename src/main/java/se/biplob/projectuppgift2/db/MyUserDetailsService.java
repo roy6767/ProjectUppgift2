@@ -1,4 +1,4 @@
-package se.biplob.projectuppgift2;
+package se.biplob.projectuppgift2.db;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -6,7 +6,6 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-import se.biplob.projectuppgift2.db.usersRepository;
 import se.biplob.projectuppgift2.users.ApplicationUser;
 
 import java.util.ArrayList;
