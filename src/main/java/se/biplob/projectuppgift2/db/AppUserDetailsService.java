@@ -6,17 +6,17 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-import se.biplob.projectuppgift2.users.ApplicationUser;
+import se.biplob.projectuppgift2.model.ApplicationUser;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
 @Service
-public class MyUserDetailsService implements UserDetailsService {
-    private final usersRepository repository;
+public class AppUserDetailsService implements UserDetailsService {
+    private final UserRepository repository;
 
-    public MyUserDetailsService(usersRepository repository) {
+    public AppUserDetailsService(UserRepository repository) {
         this.repository = repository;
     }
 

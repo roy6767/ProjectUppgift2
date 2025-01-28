@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Home</title>
 </head>
 <body>
 <h1 th:text="'You are logged in '+${username}"></h1>
+<p><a th:href="@{/logout}">Logout</a></p>
 </body>
 </html>

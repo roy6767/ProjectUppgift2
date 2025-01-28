@@ -1,9 +1,9 @@
-package se.biplob.projectuppgift2.WebSecurityConfig;
+package se.biplob.projectuppgift2.webscurityconfig;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import se.biplob.projectuppgift2.users.admin.AdminComponent;
-import se.biplob.projectuppgift2.users.manager.ManagerComponent;
+import se.biplob.projectuppgift2.model.admin.AdminComponent;
+import se.biplob.projectuppgift2.model.manager.ManagerComponent;
 
 @Configuration
 public class MyConfigurationClass {

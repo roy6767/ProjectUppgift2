@@ -1,4 +1,4 @@
-package se.biplob.projectuppgift2.users.admin;
+package se.biplob.projectuppgift2.model.admin;
 
 public class AdminDocument {
     private String title;

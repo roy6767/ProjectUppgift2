@@ -66,6 +66,15 @@
             <artifactId>spring-security-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <!--the spring-boot-devtools dependency enables automatic restart and live reload features so whenever
+             you make changes to the project, Spring Boot will automatically restart the application and refresh the
+             browser – making your development experience more convenient.-->
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
+            <optional>true</optional>
+        </dependency>
     </dependencies>
 
     <build>

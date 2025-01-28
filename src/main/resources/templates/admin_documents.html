@@ -7,8 +7,9 @@
 <body>
 <ul>
     <li th:each="document : ${documents}">
-        <span th:text="${document.title}">Titel</span> av <span th:text="${document.description}">Description</span>
+        <span th:text="${document.title}">Title</span> av <span th:text="${document.description}">Description</span>
     </li>
 </ul>
+<p><a th:href="@{/logout}">Logout</a></p>
 </body>
 </html>

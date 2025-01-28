@@ -1,4 +1,4 @@
-package se.biplob.projectuppgift2.users;
+package se.biplob.projectuppgift2.model;
 
 import jakarta.persistence.*;
 
@@ -36,9 +36,7 @@ public class ApplicationUser {
     public void setUsername(String username) {
         this.username = username;
     }
-    public String getPassword() {
-        return password;
-    }
+    public String getPassword() {return password;    }
     public void setPassword(String password) {
         this.password = password;
     }
@@ -48,4 +46,5 @@ public class ApplicationUser {
     public void setRole(String role) {
         this.role = role;
     }
+
 }

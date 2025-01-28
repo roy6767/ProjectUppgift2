@@ -3,14 +3,14 @@ package se.biplob.projectuppgift2.db;
 import jakarta.annotation.PostConstruct;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
-import se.biplob.projectuppgift2.users.ApplicationUser;
+import se.biplob.projectuppgift2.model.ApplicationUser;
 
 @Component
-public class dataInitializer {
-    private  usersRepository repository;
+public class DataInitializer {
+    private UserRepository repository;
     private  PasswordEncoder encoder;
 
-    public dataInitializer(usersRepository repository, PasswordEncoder encoder) {
+    public DataInitializer(UserRepository repository, PasswordEncoder encoder) {
         this.repository = repository;
         this.encoder = encoder;
     }
