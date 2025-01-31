@@ -1,4 +1,4 @@
-package se.biplob.projectuppgift2.initializer;
+package se.biplob.projectuppgift2.component.initializer;
 
 import jakarta.annotation.PostConstruct;
 import org.springframework.security.crypto.password.PasswordEncoder;
