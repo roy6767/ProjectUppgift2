@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- HTML document declaration and language setting -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,10 +7,15 @@
 </head>
 <body>
 <ul>
+    <!-- Thymeleaf loop to iterate over the list of documents -->
     <li th:each="document : ${documents}">
-        <span th:text="${document.title}">Title</span> av <span th:text="${document.description}">Description</span>
+        <!-- Display the title of the document -->
+        <span th:text="${document.title}">Title</span>
+        <!-- Display the description of the document -->
+        of <span th:text="${document.description}">Description</span>
     </li>
 </ul>
+<!-- Thymeleaf URL for the logout endpoint -->
 <p><a th:href="@{/logout}">Logout</a></p>
 </body>
 </html>

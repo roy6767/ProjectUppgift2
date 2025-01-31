@@ -1,5 +1,9 @@
 package se.biplob.projectuppgift2.model.manager;
-
+/**
+ * A model class representing a manager-related document.
+ * It defines the attributes of the documents and uses constructor to create instances.
+ * Uses get and set methods to bring and define values of the properties of ManagerDocument object.
+ */
 public class ManagerDocument {
     private String title;
     private String description;

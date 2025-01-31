@@ -1,11 +1,27 @@
 <!DOCTYPE html>
+<!-- HTML document declaration and language setting -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
 </head>
 <body>
+<!-- Thymeleaf URL for the login endpoint -->
 <h1 th:text="'You are logged in '+${username}"></h1>
+
+<p><a th:href="@{/user/documents}">User Content</a></p>
+
+<!-- Show admin link only if user has ADMIN role -->
+<p th:if="${#authorization.expression('hasRole(''ROLE_ADMIN'')') or #authorization.expression('hasRole(''ROLE_MANAGER'')')}">
+    <a th:href="@{/admin}">Admin documents</a>
+</p>
+
+<!-- Show manager link only if the user has MANAGER role -->
+<p th:if="${#authorization.expression('hasRole(''ROLE_MANAGER'')')}">
+    <a th:href="@{/manager}">Manager documents</a>
+</p>
+<br>
+<!-- Thymeleaf URL for the logout endpoint -->
 <p><a th:href="@{/logout}">Logout</a></p>
 </body>
 </html>

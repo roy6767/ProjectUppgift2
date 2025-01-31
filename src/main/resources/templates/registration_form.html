@@ -1,29 +1,39 @@
 <!DOCTYPE html>
+<!-- HTML document declaration and language setting -->
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Register</title>
 </head>
 <body>
 <h1>Register</h1>
-<form th:action="@{/register}" th:object="${user}" method="post"> <!-- th:object binds the form to a specific object and @{/register} defines the path and the method its using is Post-->
-    <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+<!-- Registration form -->
+<!-- CSRF token for security -->
+<form th:action="@{/register}" th:object="${user}" method="post">
+    <!-- th:object binds the form to user object, @{/register} defines the path and the method is Post-->
+    <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" /> <!-- CSRF token for security -->
+
     <div>
         <label for="username">Username:</label>
-        <input type="text" id="username" th:field="*{username}" required> <!-- th:field binds individual form fields to the properties of the object.-->
+        <input type="text" id="username" th:field="*{username}" required>
+        <!--here th:field binds the input data with the username property of user object and ensures the field cant be empty for submission -->
     </div>
     <div>
         <label for="password">Password:</label>
         <input type="password" id="password" th:field="*{password}" required>
+        <!--here th:field binds the input data with the password property of user object and ensures the field cant be empty for submission -->
     </div>
     <div>
         <label for="role">Role:</label>
         <select id="role" th:field="*{role}">
+            <!--  th:field binds the selected data with role property and options for selections are provided  -->
             <option value="USER">User</option>
             <option value="ADMIN">Admin</option>
             <option value="MANAGER">Manager</option>
         </select>
+
     </div>
-    <button type="submit">Register</button>
+
+    <button type="submit">Register</button>    <!-- Submit button -->
 </form>
 </body>
 </html>

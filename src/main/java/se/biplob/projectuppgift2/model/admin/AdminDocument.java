@@ -1,5 +1,9 @@
 package se.biplob.projectuppgift2.model.admin;
-
+/**
+ * A model class representing an administrative document.
+ * It defines the attributes of the documents and uses constructor to create instances.
+ * Uses get and set methods to bring and define values of the properties of AdminDocument object.
+ */
 public class AdminDocument {
     private String title;
     private String description;

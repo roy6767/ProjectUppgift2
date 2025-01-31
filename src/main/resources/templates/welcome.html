@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- HTML document declaration and language setting -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,9 +7,13 @@
 </head>
 <body>
 <h1>Welcome to the application.</h1>
+    <!-- Paragraph with a link to the login page Dynamically generates the URL for the login page.
+            The link directs users to the "/user" endpoint. -->
     <p>Click <a th:href="@{/user}">here</a> to log in.</p>
+    <!-- Paragraph with a link to the register page -->
     <p>Click <a th:href="@{/register}">here</a> to register.</p>
-    <p>Click <a th:href="@{/user}">here</a> to log in as a guest.</p>
+    <!-- Paragraph with a link to the login as a guest page -->
+    <p>Click <a th:href="@{/user}">here</a> to log in as a guest.( Username=guest,password=password )</p>
 
 </body>
 </html>
