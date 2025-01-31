@@ -1,9 +1,11 @@
-package se.biplob.projectuppgift2.db;
+package se.biplob.projectuppgift2.initializer;
 
 import jakarta.annotation.PostConstruct;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 import se.biplob.projectuppgift2.model.ApplicationUser;
+import se.biplob.projectuppgift2.repository.UserRepository;
+
 /**
  * A component class responsible for initializing default data in the database.
  * Creates a user account with username "guest" on application startup if it doesn't already exist.

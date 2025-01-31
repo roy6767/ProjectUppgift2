@@ -1,4 +1,4 @@
-package se.biplob.projectuppgift2.model.manager;
+package se.biplob.projectuppgift2.model;
 /**
  * A model class representing a manager-related document.
  * It defines the attributes of the documents and uses constructor to create instances.

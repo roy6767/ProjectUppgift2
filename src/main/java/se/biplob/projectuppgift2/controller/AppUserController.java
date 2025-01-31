@@ -1,4 +1,4 @@
-package se.biplob.projectuppgift2.mvcconfig;
+package se.biplob.projectuppgift2.controller;
 
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -6,10 +6,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import se.biplob.projectuppgift2.model.admin.AdminComponent;
-import se.biplob.projectuppgift2.model.admin.AdminDocument;
-import se.biplob.projectuppgift2.model.manager.ManagerComponent;
-import se.biplob.projectuppgift2.model.manager.ManagerDocument;
+import se.biplob.projectuppgift2.component.AdminComponent;
+import se.biplob.projectuppgift2.model.AdminDocument;
+import se.biplob.projectuppgift2.component.ManagerComponent;
+import se.biplob.projectuppgift2.model.ManagerDocument;
 
 import java.util.List;
 /**

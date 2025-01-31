@@ -1,4 +1,4 @@
-package se.biplob.projectuppgift2.mvcconfig;
+package se.biplob.projectuppgift2.controller;
 
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import se.biplob.projectuppgift2.db.UserRepository;
+import se.biplob.projectuppgift2.repository.UserRepository;
 import se.biplob.projectuppgift2.model.ApplicationUser;
 
 /**

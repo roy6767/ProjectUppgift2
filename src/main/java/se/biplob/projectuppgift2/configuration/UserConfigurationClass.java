@@ -1,9 +1,9 @@
-package se.biplob.projectuppgift2.webscurityconfig;
+package se.biplob.projectuppgift2.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import se.biplob.projectuppgift2.model.admin.AdminComponent;
-import se.biplob.projectuppgift2.model.manager.ManagerComponent;
+import se.biplob.projectuppgift2.component.AdminComponent;
+import se.biplob.projectuppgift2.component.ManagerComponent;
 
 /**
  * This is a configurations class that defines the admin and manager component beans and creates instances.

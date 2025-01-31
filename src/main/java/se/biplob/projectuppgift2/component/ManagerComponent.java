@@ -1,6 +1,7 @@
-package se.biplob.projectuppgift2.model.manager;
+package se.biplob.projectuppgift2.component;
 
 import org.springframework.stereotype.Component;
+import se.biplob.projectuppgift2.model.ManagerDocument;
 
 import java.util.ArrayList;
 import java.util.List;

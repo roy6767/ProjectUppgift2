@@ -1,4 +1,4 @@
-package se.biplob.projectuppgift2.webscurityconfig;
+package se.biplob.projectuppgift2.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

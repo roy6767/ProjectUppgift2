@@ -1,4 +1,4 @@
-package se.biplob.projectuppgift2.mvcconfig;
+package se.biplob.projectuppgift2.controller;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
