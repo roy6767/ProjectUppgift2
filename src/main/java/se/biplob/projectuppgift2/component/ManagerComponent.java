@@ -7,10 +7,9 @@ import java.util.ArrayList;
 import java.util.List;
 /**
  * ManagerComponent is a Spring-managed component responsible for providing a list of manager-related documents.
- * @Component annotation marks this class as a Spring-managed component,
  * enables for automatic detection and registration in the application context.
  */
-@Component
+
 public class ManagerComponent {
     /**
      * This method creates instances and returns a list of predefined ManagerDocument objects.

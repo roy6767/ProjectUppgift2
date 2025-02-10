@@ -9,7 +9,7 @@ import se.biplob.projectuppgift2.component.ManagerComponent;
  * This is a configurations class that defines the admin and manager component beans and creates instances.
  */
 @Configuration //
-public class UserConfigurationClass {
+public class UserConfiguration {
     @Bean
     public AdminComponent getAdminComponent() {
         return new AdminComponent();
